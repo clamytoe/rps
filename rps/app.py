@@ -58,7 +58,6 @@ class Game:
         try:
             while count < self.rounds:
                 pc_roll = Roll(choice(PLAYS))
-                print(f"Computer: {pc_roll}")
                 player_roll = self.get_player_roll(self.player)
 
                 if player_roll.name == pc_roll.name:

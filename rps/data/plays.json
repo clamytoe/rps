@@ -1,0 +1,132 @@
+{"frames": [
+
+{
+	"filename": "air.png",
+	"frame": {"x":0,"y":0,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "devil.png",
+	"frame": {"x":82,"y":0,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "dragon.png",
+	"frame": {"x":164,"y":0,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "fire.png",
+	"frame": {"x":0,"y":82,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "gun.png",
+	"frame": {"x":82,"y":82,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "human.png",
+	"frame": {"x":164,"y":82,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "lightning.png",
+	"frame": {"x":0,"y":164,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "paper.png",
+	"frame": {"x":82,"y":164,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "rock.png",
+	"frame": {"x":164,"y":164,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "scissors.png",
+	"frame": {"x":0,"y":246,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "snake.png",
+	"frame": {"x":82,"y":246,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "sponge.png",
+	"frame": {"x":164,"y":246,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "tree.png",
+	"frame": {"x":0,"y":328,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "water.png",
+	"frame": {"x":82,"y":328,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+},
+{
+	"filename": "wolf.png",
+	"frame": {"x":164,"y":328,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "plays.png",
+	"format": "RGBA8888",
+	"size": {"w":246,"h":410},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:eaca4a337661e4f7b36f308d2980eac6:53ed71e87f2cc98b69ed743b61061b0f:055600e11e7d7d9d0b202bd31f9e08c7$"
+}
+}

@@ -2,14 +2,34 @@
 > *RPS game that I created during my 100 Days of Code challenge*
 
 ![Python version][python-version]
-[![Build Status][travis-image]][travis-url]
-[![BCH compliance][bch-image]][bch-url]
 [![GitHub issues][issues-image]][issues-url]
 [![GitHub forks][fork-image]][fork-url]
 [![GitHub Stars][stars-image]][stars-url]
 [![License][license-image]][license-url]
 
 NOTE: This app was generated with [Cookiecutter](https://github.com/audreyr/cookiecutter) along with [@clamytoe's](https://github.com/clamytoe) [toepack](https://github.com/clamytoe/toepack) project template.
+
+The task was to create a rock paper scissors game but beefed up with this setup:
+
+![rps15](rps15.jpg)
+
+I coded this to work on a Linux system, so your mileage may vary. Once I had the initial text version working how I 
+liked it, I thought that it I thought that it would be a good exercise to try and display the "rolls" in play. Inspired 
+by [pybites](https://pybit.es/) [Using Pillow to Create Nice Banners For Your Site](https://pybit.es/pillow-banner-image.html) article, I
+decided to try and do the same.
+
+After extracting all of the *rolls* with [GIMP](https://www.gimp.org/) I decided to kick it up a notch and create a
+sprite sheet out of them with [TexturePacker](https://www.codeandweb.com/texturepacker):
+
+![sprite_sheet](rps/data/plays.png)
+
+Still not satisfied with all of that, I kicked it up and notch by super imposing a red X over the losing play!
+
+![loser](rps/data/lose.png)
+
+Even with all f that, it's still pretty clunky. I should have just used [PyGame](https://www.pygame.org/) but I had 
+already spent enough time on this. I basically wanted to prove to myself that I could do it.
+
 
 ### Initial setup
 ```bash
@@ -63,10 +83,6 @@ If you encounter any problems, please [file an issue](https://github.com/clamyto
 * **v0.1.0** Initial commit.
 
 [python-version]:https://img.shields.io/badge/python-3.6.6-brightgreen.svg
-[travis-image]:https://travis-ci.org/clamytoe/rps.svg?branch=master
-[travis-url]:https://travis-ci.org/clamytoe/rps
-[bch-image]:https://bettercodehub.com/edge/badge/clamytoe/rps?branch=master
-[bch-url]:https://bettercodehub.com/
 [issues-image]:https://img.shields.io/github/issues/clamytoe/rps.svg
 [issues-url]:https://github.com/clamytoe/rps/issues
 [fork-image]:https://img.shields.io/github/forks/clamytoe/rps.svg

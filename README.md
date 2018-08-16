@@ -11,7 +11,7 @@ NOTE: This app was generated with [Cookiecutter](https://github.com/audreyr/cook
 
 The task was to create a rock paper scissors game but beefed up with this setup:
 
-![rps15](rps15.jpg)
+![rps15](img/rps15.jpg)
 
 I coded this to work on a Linux system, so your mileage may vary. Once I had the initial text version working how I 
 liked it, I thought that it I thought that it would be a good exercise to try and display the "rolls" in play. Inspired 
@@ -60,8 +60,65 @@ pip install -e .
 
 ## Usage
 ```bash
-rps
+rps --help
+usage: rps [-h] [-r ROUNDS] [-g]
+
+Rock, Paper, Scissor's +
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r ROUNDS, --rounds ROUNDS
+                        How many rounds to play
+  -g, --gui             Display images
 ```
+
+Typical run with images enabled would look like this:
+```bash
+rps --gui
+========================================================================
+                   Rock, Paper, Scissors, + 12 More!                    
+========================================================================
+
+What is your name? 
+```
+
+After entering *clamytoe* as my name:
+```bash
+
+[ 1] Air
+[ 2] Devil
+[ 3] Dragon
+[ 4] Fire
+[ 5] Gun
+[ 6] Human
+[ 7] Lightning
+[ 8] Paper
+[ 9] Rock
+[10] Scissors
+[11] Snake
+[12] Sponge
+[13] Tree
+[14] Water
+[15] Wolf
+
+
+Which play do you choose Clamytoe?
+```
+
+![round1](img/round1.png)
+
+After hitting *Enter* you get prompted for your choice once again. Selecting *Snake*:
+
+![round2](img/round2.png)
+
+Choosing *Dragon* for final round:
+
+![round3](img/round3.png)
+
+Final results:
+
+![results](img/results.png)
+ 
 
 ## Contributing
 Contributions are very welcome. Tests can be run with with `pytest -v`, please ensure that all tests are passing and that you've checked your code with the following packages before submitting a pull request:

@@ -13,8 +13,9 @@ The task was to create a rock paper scissors game but beefed up with this setup:
 
 ![rps15](img/rps15.jpg)
 
-I coded this to work on a Linux system, so your mileage may vary. I set it up to fail on any other platform, but if you
-get it to work on say a Mac, let me know what your `platform.system()` shows up as and I will add it. 
+I coded this to work on a Linux system, so your mileage may vary. Mac support was verified by Erik O'Shaughnessy, 
+thanks Erik! I set it up to fail on any other platform though, but if you get it to work on say a Windows machine, let 
+me know what your `platform.system()` shows up as and I will add it. 
 
 Once I had the initial text version working how I liked, I thought that it would be a good exercise to try and display 
 the "rolls" in play. Inspired by pybites' [Using Pillow to Create Nice Banners For Your Site](https://pybit.es/pillow-banner-image.html) 

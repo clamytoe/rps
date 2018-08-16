@@ -1,9 +1,9 @@
-from csv import DictReader
 import json
 import os
 from collections import defaultdict
-from PIL import Image, ImageDraw, ImageFont
+from csv import DictReader
 
+from PIL import Image, ImageDraw, ImageFont
 
 module_path = __file__
 pwd = '/'.join(module_path.split('/')[:-1])

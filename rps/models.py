@@ -6,12 +6,12 @@ from csv import DictReader
 from PIL import Image, ImageDraw, ImageFont
 
 module_path = __file__
-pwd = '/'.join(module_path.split('/')[:-1])
-ASSET_DIR = os.path.join(pwd, 'data')
-DATA = os.path.join(ASSET_DIR, 'battle-table.csv')
-SPRITE_MAP = os.path.join(ASSET_DIR, 'plays.json')
-SPRITE_SHEET = os.path.join(ASSET_DIR, 'plays.png')
-MARKER = os.path.join(ASSET_DIR, 'lose.png')
+pwd = "/".join(module_path.split("/")[:-1])
+ASSET_DIR = os.path.join(pwd, "data")
+DATA = os.path.join(ASSET_DIR, "battle-table.csv")
+SPRITE_MAP = os.path.join(ASSET_DIR, "plays.json")
+SPRITE_SHEET = os.path.join(ASSET_DIR, "plays.png")
+MARKER = os.path.join(ASSET_DIR, "lose.png")
 
 
 class Player:
@@ -37,7 +37,7 @@ class Roll:
         with open(DATA) as fin:
             reader = DictReader(fin)
             for row in reader:
-                if row['Attacker'] == self.name:
+                if row["Attacker"] == self.name:
                     yield row
                 else:
                     continue
@@ -50,7 +50,7 @@ class Roll:
         pwned = []
         for row in self._rolls():
             for key in row.keys():
-                if row[key] == 'lose':
+                if row[key] == "lose":
                     pwned.append(key)
         return pwned
 
@@ -59,7 +59,7 @@ class Roll:
         wins = []
         for row in self._rolls():
             for key in row.keys():
-                if row[key] == 'win':
+                if row[key] == "win":
                     wins.append(key)
         return wins
 
@@ -70,12 +70,12 @@ class Sprite:
     DEFAULT_CANVAS_SIZE = (DEFAULT_WIDTH, DEFAULT_HEIGHT)
     BG_COLOR = (108, 122, 128)
     FONT_COLOR = (59, 201, 193)
-    FONT_TYPE = os.path.join(ASSET_DIR, 'Ubuntu-R.ttf')
+    FONT_TYPE = os.path.join(ASSET_DIR, "Ubuntu-R.ttf")
     FONT_SIZE = 42
     FONT_PADDING_HOR = 0
     FONT_PADDING_VERT = 20
 
-    def __init__(self, player_roll, pc_roll, loser=None, text='vs'):
+    def __init__(self, player_roll, pc_roll, loser=None, text="vs"):
         self.player_roll = player_roll
         self.pc_roll = pc_roll
         self.text = text
@@ -91,15 +91,15 @@ class Sprite:
         return sprite
 
     def gen_image(self):
-        image = Image.new('RGB', self.DEFAULT_CANVAS_SIZE, self.BG_COLOR)
+        image = Image.new("RGB", self.DEFAULT_CANVAS_SIZE, self.BG_COLOR)
         player_sprite = self.get_sprite(self.player_roll)
         pc_sprite = self.get_sprite(self.pc_roll)
         player_offset = (10, 10)
         pc_offset = (self.DEFAULT_WIDTH - 92, 10)
 
-        if self.loser == 'player':
+        if self.loser == "player":
             player_sprite = self.mark(player_sprite)
-        elif self.loser == 'pc':
+        elif self.loser == "pc":
             pc_sprite = self.mark(pc_sprite)
 
         image.paste(player_sprite, player_offset, player_sprite)
@@ -122,7 +122,7 @@ class Sprite:
 def load_map(file: str) -> dict:
     with open(file) as s_map:
         data = json.loads(s_map.read())
-    return data['frames']
+    return data["frames"]
 
 
 def plays() -> defaultdict:
@@ -130,11 +130,11 @@ def plays() -> defaultdict:
     sprites = defaultdict(dict)
 
     for frame in frames:
-        filename = frame['filename'].split('.')[0]
-        x = frame['frame']['x']
-        y = frame['frame']['y']
-        w = x + frame['sourceSize']['w']
-        h = y + frame['sourceSize']['h']
+        filename = frame["filename"].split(".")[0]
+        x = frame["frame"]["x"]
+        y = frame["frame"]["y"]
+        w = x + frame["sourceSize"]["w"]
+        h = y + frame["sourceSize"]["h"]
         sprites[filename.title()] = (x, y, w, h)
 
     return sprites

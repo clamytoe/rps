@@ -126,7 +126,7 @@ def get_player_name():
 
 
 def main():
-    if platform.system() != "Linux":
+    if platform.system() not in ["Darwin", "Linux"]:
         print(f"Sorry, your platform '{platform.system()}' is not supported!")
         exit(1)
 

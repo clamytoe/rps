@@ -105,3 +105,15 @@ ENV/
 
 # pytest
 .pytest_cache/
+
+# Gimp
+*.xcf
+
+# Inkscape
+*.svg
+
+# Texturepacker
+*.tps
+
+# Anything else
+misc/

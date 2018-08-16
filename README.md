@@ -13,22 +13,30 @@ The task was to create a rock paper scissors game but beefed up with this setup:
 
 ![rps15](img/rps15.jpg)
 
-I coded this to work on a Linux system, so your mileage may vary. Once I had the initial text version working how I 
-liked it, I thought that it I thought that it would be a good exercise to try and display the "rolls" in play. Inspired 
-by [pybites](https://pybit.es/) [Using Pillow to Create Nice Banners For Your Site](https://pybit.es/pillow-banner-image.html) article, I
-decided to try and do the same.
+I coded this to work on a Linux system, so your mileage may vary. I set it up to fail on any other platform, but if you
+get it to work on say a Mac, let me know what your `platform.system()` shows up as and I will add it. 
+
+Once I had the initial text version working how I liked, I thought that it would be a good exercise to try and display 
+the "rolls" in play. Inspired by pybites' [Using Pillow to Create Nice Banners For Your Site](https://pybit.es/pillow-banner-image.html) 
+article, I decided to try and do the same.
 
 After extracting all of the *rolls* with [GIMP](https://www.gimp.org/) I decided to kick it up a notch and create a
 sprite sheet out of them with [TexturePacker](https://www.codeandweb.com/texturepacker):
 
 ![sprite_sheet](rps/data/plays.png)
 
-Still not satisfied with all of that, I kicked it up and notch by super imposing a red X over the losing play!
+> Using a sprite sheet cuts down on the amount of images needed and the *json* map that's generated makes it a breeze to
+load them. 
+
+Still not satisfied with all of that, I kicked it up another notch by super imposing a red X over the losing play!
 
 ![loser](rps/data/lose.png)
 
-Even with all f that, it's still pretty clunky. I should have just used [PyGame](https://www.pygame.org/) but I had 
-already spent enough time on this. I basically wanted to prove to myself that I could do it.
+Even with all of that, it's still a little clunky with having to jump back and forth from the image to the command line,
+but it works pretty good. I should have just used [PyGame](https://www.pygame.org/) though, but I had already spent 
+enough time on this. 
+
+> I basically wanted to prove to myself that I could do this and I had accomplished that.
 
 
 ### Initial setup

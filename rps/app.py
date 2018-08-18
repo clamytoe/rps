@@ -23,6 +23,7 @@ class Game:
         self.player = player
         self.pc = Player("computer")
         self.rounds = rounds
+        self.played = 0
         self.gui = gui
 
     def end_game(self):
@@ -54,9 +55,8 @@ class Game:
                 print(f"You must enter a number between 1-{len(PLAYS)}")
 
     def run(self):
-        count = 0
         try:
-            while count < self.rounds:
+            while self.played < self.rounds:
                 pc_roll = Roll(choice(PLAYS))
                 player_roll = self.get_player_roll(self.player)
 
@@ -70,7 +70,7 @@ class Game:
                     result = self.player if outcome else self.pc
                     loser = "player" if result.name != self.player.name else "pc"
                     self.player.won() if outcome else self.pc.won()
-                    count += 1
+                    self.played += 1
 
                     self.show_results(player_roll, pc_roll, loser=loser)
                     print(f"{result} won the match!")
@@ -84,7 +84,7 @@ class Game:
         clear_console()
         if self.gui:
             _ = Sprite(player_roll, pc_roll, loser=loser)
-        print()
+        print(f'Round {self.played} of {self.rounds}')
         print("".center(72, "="))
         print()
         print(f"{self.player}[{player_roll}] vs {self.pc}[{pc_roll}]".center(72))

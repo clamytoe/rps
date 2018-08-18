@@ -16,7 +16,7 @@ MARKER = os.path.join(ASSET_DIR, "lose.png")
 
 class Player:
     def __init__(self, name):
-        self.name = name.title()
+        self.name = name.title() if name else 'Player'
         self.score = 0
 
     def __str__(self):

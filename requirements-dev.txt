@@ -4,4 +4,4 @@ pillow>=6.2.0
 pycodestyle==2.4.0
 pylint==1.9.2
 pytest==3.6.4
-pytest-cov=2.5.1
+pytest-cov==2.5.1
